@@ -1,0 +1,30 @@
+# LISTAR TODOS COMENTARIOS
+GET http://localhost:9889/comments
+
+### LISTAR TODOS EMAILS CADASTRADOS NO NEWSLATTER
+GET http://localhost:9889/newslatter
+
+### CADASTRAR NOVO COMENTARIO
+POST http://localhost:9889/comments
+content-type: application/json
+
+{
+  "userName":"Mike",
+  "comment":"helooo",
+  "country":"Angola",
+  "reaction":"like",
+  "flag":"bandeira do pais"
+}
+### APAGAR COMENTARIO ESPECIFICO 
+DELETE http://localhost:9889/comments/idDoComentario
+
+### CADASTRAR NOVO EMAIL NO NEWSLATTER
+POST http://localhost:9889/newslatter
+content-type: application/json
+
+{
+  "email":"usydfshfd@acme.com"
+}
+
+### APAGAR EMAIL ESPECIFICO NO NEWSLATTER
+DELETE http://localhost:9889/newslatter/idDoEmail
